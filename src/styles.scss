@@ -1,0 +1,46 @@
+.react-ipv4-input {
+  display: flex !important;
+  border: 1px solid #c2c3c9;
+  border-radius: 5px;
+  padding: 5px 8px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+
+  .react-ipv4-input__item {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    margin-right: 5px;
+
+    input {
+      padding: 0 !important;
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      border: none !important;
+      outline: none !important;
+      text-align: center;
+      position: relative;
+      box-shadow: none !important;
+      margin: 0 !important;
+    }
+
+    i {
+      position: relative;
+      padding: 0 !important;
+      margin: 0 !important;
+      color: inherit;
+    }
+  }
+
+  &.has-error {
+    border-color: #a94442;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  }
+
+  &:focus-within { /* adiciona borda shadow quando há foco em algum dos inputs */
+    box-shadow: 0 0 0 2px #007bff;
+  }
+}
